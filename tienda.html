@@ -75,72 +75,71 @@
 
 
         <!--      BOTÓN FLOTANTE DEL CARRITO      -->
-    <button id="botonCarrito" onclick="abrirCarrito()">
-        🛒 CARRITO <span id="contadorCarrito">0</span>
-    </button>
+        <button id="botonCarrito" onclick="abrirCarrito()">
+            🛒 CARRITO <span id="contadorCarrito">0</span>
+        </button>
 
     <!--       PANEL LATERAL DEL CARRITO       -->
-    <div id="panelCarrito">
-        <button id="btnCerrarCarrito" onclick="cerrarCarrito()">✕ CERRAR</button>
-        <h2>🛒 MI CARRITO</h2>
-        <div id="listaCarrito">
-            <div id="carritoVacio">Tu carrito está vacío</div>
-        </div>
-        <div id="totalCarrito">Total: 0.000 FCFA</div>
-        <button id="btnConfirmarEncargo" onclick="abrirModal()">CONFIRMAR ENCARGO</button>
-    </div>
-
-    <!--      MODAL DE REGISTRO DEL CLIENTE     -->
-    <div id="fondoModal">
-        <div id="cajModal">
-
-            <!-- Formulario de registro -->
-            <div id="formularioModal">
-                <h2> TUS DATOS DE ENTREGA</h2>
-
-                <div class="grupoModal">
-                    <label>Nombre Completo</label>
-                    <input type="text" id="modalNombre" placeholder="Ej: Cristian Duban">
-                    <div class="errorModal" id="errNombre"></div>
-                </div>
-
-                <div class="grupoModal">
-                    <label>Domicilio (dirección)</label>
-                    <input type="text" id="modalDomicilio" placeholder="Ej: Bomudi , Bata">
-                    <div class="errorModal" id="errDomicilio"></div>
-                </div>
-
-                <div class="grupoModal">
-                    <label>Número de Teléfono</label>
-                    <input type="text" id="modalTelefono" placeholder="Ej: 222123456">
-                    <div class="errorModal" id="errTelefono"></div>
-                </div>
-
-                <div class="grupoModal">
-                    <label>Email</label>
-                    <input type="email" id="modalEmail" placeholder="Ej: cristianduban@gmail.com">
-                    <div class="errorModal" id="errEmail"></div>
-                </div>
-
-                <button id="btnEnviarEncargo" onclick="enviarEncargo()">ENVIAR ENCARGO</button>
-                <button id="btnCancelarModal" onclick="cerrarModal()">Cancelar</button>
+        <div id="panelCarrito">
+            <button id="btnCerrarCarrito" onclick="cerrarCarrito()">✕ CERRAR</button>
+            <h2>🛒 MI CARRITO</h2>
+            <div id="listaCarrito">
+                <div id="carritoVacio">Tu carrito está vacío</div>
             </div>
-
-            <!-- Mensaje de éxito -->
-            <div id="mensajeExito">
-                <h3>¡Encargo Enviado!</h3>
-                <p>Tu encargo ha sido recibido. El personal de RONDO-AUFIT lo revisará y te contactará pronto.</p>
-                <button id="btnEnviarEncargo" onclick="cerrarTodo()">VOLVER A LA TIENDA</button>
-            </div>
-
+            <div id="totalCarrito">Total: 0.000 FCFA</div>
+            <button id="btnConfirmarEncargo" onclick="abrirModal()">CONFIRMAR ENCARGO</button>
         </div>
-    </div>
 
-    <!--      NOTIFICACIÓN RÁPIDA       -->
-    <div id="notificacion">✓ Producto añadido al carrito</div>
+        <!--      MODAL DE REGISTRO DEL CLIENTE     -->
+        <div id="fondoModal">
+            <div id="cajModal">
+
+                <!-- Formulario de registro -->
+                <div id="formularioModal">
+                    <h2> TUS DATOS DE ENTREGA</h2>
+
+                    <div class="grupoModal">
+                        <label>Nombre Completo</label>
+                        <input type="text" id="modalNombre" placeholder="Ej: Cristian Duban">
+                        <div class="errorModal" id="errNombre"></div>
+                    </div>
+
+                    <div class="grupoModal">
+                        <label>Domicilio (dirección)</label>
+                        <input type="text" id="modalDomicilio" placeholder="Ej: Bomudi , Bata">
+                        <div class="errorModal" id="errDomicilio"></div>
+                    </div>
+
+                    <div class="grupoModal">
+                        <label>Número de Teléfono</label>
+                        <input type="text" id="modalTelefono" placeholder="Ej: 222123456">
+                        <div class="errorModal" id="errTelefono"></div>
+                    </div>
+
+                    <div class="grupoModal">
+                        <label>Email</label>
+                        <input type="email" id="modalEmail" placeholder="Ej: cristianduban@gmail.com">
+                        <div class="errorModal" id="errEmail"></div>
+                    </div>
+
+                    <button id="btnEnviarEncargo" onclick="enviarEncargo()">ENVIAR ENCARGO</button>
+                    <button id="btnCancelarModal" onclick="cerrarModal()">Cancelar</button>
+                </div>
+
+                <!-- Mensaje de éxito -->
+                <div id="mensajeExito">
+                    <h3>¡Encargo Enviado!</h3>
+                    <p>Tu encargo ha sido recibido. El personal de RONDO-AUFIT lo revisará y te contactará pronto.</p>
+                    <button id="btnEnviarEncargo" onclick="cerrarTodo()">VOLVER A LA TIENDA</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--      NOTIFICACIÓN RÁPIDA       -->
+        <div id="notificacion">✓ Producto añadido al carrito</div>
 
     </main>
-
     <footer>
         <div class="hijosFooter1"><p class="letras">2026 RONDO-AUFIT</p></div>
         <div class="hijosFooter2"><p class="letras">CREADO POR CRISTIAN DUBAN</p></div>
