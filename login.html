@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONDO-AUFIT | Acceso Personal</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="letraRondo">RONDO-AUFIT</div>
+    <div class="subtitulo">ACCESO EXCLUSIVO PARA PERSONAL</div>
+
+    <div class="caja-login">
+        <h2> INICIAR SESIÓN</h2>
+
+        <div class="grupo">
+            <label>Usuario</label>
+            <input type="text" id="inputUsuario" placeholder="Tu usuario">
+        </div>
+
+        <div class="grupo">
+            <label>Contraseña</label>
+            <input type="password" id="inputContrasena" placeholder="Tu contraseña" >
+        </div>
+
+        <button onclick="iniciarSesion()">ENTRAR</button>
+
+        <div id="mensajeError"></div>
+
+        <div class="volver">
+            <a href="tienda.html">← Volver a la tienda</a>
+        </div>
+    </div>
+
+   
+
+    <script src="datos.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

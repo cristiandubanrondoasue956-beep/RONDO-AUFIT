@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONDO-AUFIT | Panel Empleado</title>
+    <link rel="stylesheet" href="panel-empleado.css">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+    </style>
+    
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="encabezado">
+        <h1> PANEL EMPLEADO</h1>
+        <span class="info-usuario" id="nombreEmpleado">—</span>
+        <button class="btn-cerrar" onclick="cerrarSesion()">CERRAR SESIÓN</button>
+    </div>
+
+    <div class="contenido">
+
+        <h2> ENCARGOS DE CLIENTES</h2>
+
+        <!-- Filtros para ver por estado -->
+        <div class="filtros">
+            <button class="btn-filtro activo" onclick="filtrar('todos', this)">TODOS</button>
+            <button class="btn-filtro" onclick="filtrar('pendiente', this)">PENDIENTES</button>
+            <button class="btn-filtro" onclick="filtrar('confirmado', this)">CONFIRMADOS</button>
+            <button class="btn-filtro" onclick="filtrar('denegado', this)">DENEGADOS</button>
+        </div>
+
+        <button class="btn-refrescar" onclick="cargarEncargos()"> Encargos</button>
+
+        <!-- Aquí se insertan los encargos -->
+        <div class="encargos-lista" id="listaEncargos">
+            <div class="sin-encargos">Cargando encargos...</div>
+        </div>
+
+    </div>
+
+    <script src="datos.js"></script>
+    <script src="empleado.js"></script>
+
+</body>
+</html>

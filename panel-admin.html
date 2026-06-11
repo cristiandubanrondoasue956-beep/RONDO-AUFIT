@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONDO-AUFIT | Panel Administrador</title>
+    <link rel="stylesheet" href="panel-admin.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+    </style>
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="encabezado">
+        <h1> PANEL ADMINISTRADOR</h1>
+        <span class="info-admin" id="nombreAdmin">—</span>
+        <button class="btn-cerrar" onclick="cerrarSesion()">CERRAR SESIÓN</button>
+    </div>
+
+    <!-- Tablas de navegación -->
+    <div class="tablas">
+        <div class="tab activo" onclick="cambiarTab('estadisticas', this)"> ESTADÍSTICAS</div>
+        <div class="tab" onclick="cambiarTab('encargos', this)"> TODOS LOS ENCARGOS</div>
+        <div class="tab" onclick="cambiarTab('inventario', this)"> INVENTARIO</div>
+    </div>
+
+    <!--       SECCIÓN: ESTADÍSTICAS       -->
+    <div class="seccion activa" id="seccion-estadisticas">
+
+        <h2> RESUMEN GENERAL</h2>
+
+        <div class="stats-grid">
+            <div class="stat-card total">
+                <div class="stat-numero" id="statTotal">0</div>
+                <div class="stat-label">ENCARGOS TOTALES</div>
+            </div>
+            <div class="stat-card pendiente">
+                <div class="stat-numero" id="statPendientes">0</div>
+                <div class="stat-label">PENDIENTES</div>
+            </div>
+            <div class="stat-card confirmado">
+                <div class="stat-numero" id="statConfirmados">0</div>
+                <div class="stat-label">CONFIRMADOS</div>
+            </div>
+            <div class="stat-card denegado">
+                <div class="stat-numero" id="statDenegados">0</div>
+                <div class="stat-label">DENEGADOS</div>
+            </div>
+            <div class="stat-card dinero">
+                <div class="stat-numero" id="statDinero">0fcfa</div>
+                <div class="stat-label">INGRESOS CONFIRMADOS</div>
+            </div>
+        </div>
+
+        <h2> CLIENTES QUE HAN HECHO ENCARGOS</h2>
+        <div id="listaClientes"></div>
+
+    </div>
+
+    <!--       SECCIÓN: TODOS LOS ENCARGOS       -->
+    <div class="seccion" id="seccion-encargos">
+        <h2> HISTORIAL DE ENCARGOS</h2>
+        <button class="btn-refrescar" onclick="cargarEncargos()"> Reanudar</button>
+        <div class="tabla-contenedor">
+            <table id="tablaEncargos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FECHA</th>
+                        <th>CLIENTE</th>
+                        <th>PRODUCTOS</th>
+                        <th>TOTAL</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTablaEncargos">
+                    <tr><td colspan="6" class="sin-datos">Cargando...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--       SECCIÓN  INVENTARIO       -->
+    <div class="seccion" id="seccion-inventario">
+        <h2> INVENTARIO DE PRODUCTOS</h2>
+        <p style="color:#666; margin-bottom:20px; font-size:13px;">Puedes modificar el stock de cada producto directamente aquí.</p>
+        <div class="tabla-contenedor">
+            <table id="tablaInventario">
+                <thead>
+                    <tr>
+                        <th>FOTO</th>
+                        <th>NOMBRE</th>
+                        <th>CATEGORÍA</th>
+                        <th>TALLA</th>
+                        <th>PRECIO</th>
+                        <th>STOCK</th>
+                        <th>EDITAR STOCK</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoInventario">
+                    <tr><td colspan="7" class="sin-datos">Cargando...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="datos.js"></script>
+    <script src="admin.js"></script>
+
+</body>
+</html>

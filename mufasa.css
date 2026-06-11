@@ -1,0 +1,1445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:black;
+}
+.headerPadre1{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(0, 0, 0);
+    border-color: rgb(39, 85, 126);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    border-bottom: 2px solid white;
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.headerPadre2{
+    width: 5%;
+    height: 94%;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.headerPadre3{
+    width: 12%;
+    height: 96%;
+    background-color: rgb(98, 103, 107);
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.headerPadre4{
+    width: 29%;
+    height: 96%;
+    background-color:bisque;
+    display: flex;
+    flex-direction: row;
+    
+}
+.headerHijos{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-color: rgb(19, 27, 27);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+
+/*AQUI EMPIEZA EL MAIN*/
+
+
+/*AQUI EMPIEZAN LAS 2 PRIMERAS GRANDES CAJAS*/
+
+.mainPadre1{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.mainPadre1-1{
+    width: 30%;
+    height: 870px;
+    background-color: black;
+    margin-top: 52px;
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.hijosmainPadre1-1-1{
+    width: 20%;
+    height: 10%;
+    background-color: aliceblue;
+    border-radius: 100px;
+    background: url(fotos/emoji.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 6px 0px 3px 0px gray;
+}
+.hijosmainPadre1-1-2{
+    width: 80%;
+    height: 7%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hijosmainPadre1-1-3{
+    width: 80%;
+    height: 40%;
+    background-color: aliceblue;
+    margin-bottom: 50px;
+    background: url(fotos/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px white;
+    transition: 3s;
+    cursor: pointer;
+    animation: 
+        mover 2s infinite alternate,
+        move-box 2s  infinite alternate;
+}
+.hijosmainPadre1-1-3:hover{
+    height: 30%;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.hijosmainPadre1-1-3::before{
+    background-image: linear-gradient(180deg, red,white);
+    height: 130%;
+    animation: colorlinea 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+
+
+.hijosmainPadre1-1-4{
+    width: 80%;
+    height: 6%;
+    background-color: aliceblue;
+    margin-top: 100px;
+}
+
+
+.mainPadre1-2{
+    width: 100%;
+    height: 870px;
+    background-color: black;
+    margin-top: 52px;
+    border-radius: 10px;
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: imagenes;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.mainPadre1-2:hover{
+    animation-play-state: paused;
+}
+@keyframes imagenes{
+    0%,30%{
+        background: url(fotos/bonito.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+    50% ,52%{
+        background: black;
+    }
+    100%{
+        background: url(fotos/3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+    
+    
+}
+
+/*AQUI TERMINAN LAS 2 PRIMERAS GRANDES CAJAS*/
+
+
+
+/*AQUI ENPIEZA LA SECCION DE ROPASA*/
+/*CAJAS GRANDES*/
+
+
+.mainPadre2{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow-x: auto;
+}
+.tablasRopas1{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas1-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas1-2{
+    width: 97%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas2{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas2-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas2-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas3{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas3-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas3-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas4{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas4-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas4-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas5{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas5-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas5-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas6{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas6-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas6-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas7{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas7-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas7-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas8{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas8-1{
+    width: 100%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas8-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas9{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas9-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas9-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas10{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas10-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas10-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas11{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas11-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas11-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+
+.tablasRopas12{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas12-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas12-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.tablasRopas13{
+    width: 100%;
+    height: 700px;
+    /*background-color: rgb(105, 97, 97);*/
+    border-radius: 10px;
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+.hijostablasRopas13-1{
+    width: 87%;
+    height: 86%;
+    padding: 0px 18px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijostablasRopas13-2{
+    width: 97%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+/*
+.tablasRopas{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(105, 97, 97);
+    margin-top: 1px;
+    border-radius: 10px;
+    flex: 0 0 20em;
+} 
+*/
+
+/*CAJA DE ROPAS*/
+
+.cajaropa1{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/lacoste.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa1:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa2{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(61, 26, 26);
+    background: url(fotos/camisanegra.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa2:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa3{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/pantalonchin.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa3:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa4{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/chaquetagris.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa4:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa5{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/cinturonrojo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa5:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa6{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/blusa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa6:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa7{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/pantalonmaron.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa7:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa8{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/chandalropa.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa8:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa9{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/trajerosa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa9:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa10{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/sombreromaron.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa10:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa11{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/cadena2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa11:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa12{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background: url(fotos/goro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa12:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.cajaropa13{
+    width: 100%;
+    height: 70%;
+    background:black;
+    background: url(fotos/rojo1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s;
+}
+.cajaropa13:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+
+
+
+.btn{
+    width: 90%;
+    height: 80px;
+    background-color: rgb(211, 17, 17);
+    border: none;
+    cursor: pointer;
+    transition:0.5s;
+    font-size: 15px;
+    padding: 0px 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px;
+    border-right: 2px;
+    border-left: 2px;
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn:hover{
+    background-color: white;
+    transition: 0.1;
+    transform: scale3d(10.10);
+}
+
+/*AQUI TERMINA LA SECCION DE ROPAS*/
+
+
+
+.mainPadre3{
+    width: 100%;
+    height: 585px;
+    background-color: black;
+    margin-top: 1px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: url(fotos/fashio.avif);
+}
+
+
+.mainPadre4{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 1px;
+    display: flex;
+    flex-direction:row;
+    gap: 200px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.hijosPadre4-1{
+    width: 90%;
+    height: 80%;
+    background-color: rgb(105, 97, 97);
+    margin-left:200px ;
+    background: url(fotos/rojo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px brown;
+    animation: 
+        mover 2s infinite alternate,
+        move-box 2s  infinite alternate;
+}
+@keyframes move-box{
+    0%{
+        transform:translateX();
+    }
+    100%{
+        transform:translateX(200px);
+    }
+}
+
+.hijosPadre4-2{
+    width: 60%;
+    height: 70%;
+    /*background-color: rgb(105, 97, 97);*/
+    margin-right: 200px;
+    transition: 3s;
+}
+.hijosPadre4-2:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+h5{
+    text-align: center;
+    font-size: 60px;
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-style: oblique;
+    text-shadow: 0 0 10px brown;
+    color: rgb(245, 231, 231);
+    transition: 0.2s;
+}
+h5:hover{
+    color: rgb(156, 0, 0);
+    transition: 0.2s;
+}
+h4{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-style: oblique;
+    text-shadow: 0 0 10px brown;
+    color: rgb(245, 231, 231);
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.2s;
+}
+h4:hover{
+    color: rgb(156, 0, 0);
+    transition: 0.2s;
+}
+h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: oblique;
+    text-shadow: 0 0 10px brown;
+    color: rgb(245, 231, 231);
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.2s;
+}
+h3:hover{
+    color: rgb(156, 0, 0);
+    transition: 0.2s;
+}
+.mainPadre6{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    margin-top: 1px;
+    gap: 20px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.hijosPadre6-1{
+    width: 30%;
+    height: 500px;
+    background-color: rgb(105, 97, 97);
+    margin-left: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(fotos/mujer\ roja.jpg);
+}
+.hijosPadre6-2{
+    width: 50%;
+    height: 80%;
+    background-color: rgb(105, 97, 97);
+    background: url(fotos/2personas\ con\ chaqueta.webp);
+}
+.hijosPadre6-3{
+    width: 30%;
+    height: 500px;
+    background-color: rgb(105, 97, 97);
+    margin-right: 40px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: url(fotos/chicaa.jpg);
+}
+
+.mainPadre7{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    margin-top: 1px;
+    border-bottom: 2px solid white;
+}
+.hijosPadre7-1{
+    width: 100%;
+    height: 49%;
+    /*background-color: rgb(105, 97, 97);*/
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0 0 30px brown;
+    font-size: 130px;
+    color: antiquewhite;
+    transition: 0.2s;
+}
+h1:hover{
+    color: black;
+    transition: 0.2s;
+}
+.hijosPadre7-2{
+    width: 100%;
+    height:50%;
+    background-color: rgb(105, 97, 97);
+    margin-top: 7px;
+}
+
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+    
+}
+.hijosFooter1{
+    width: 20%;
+    height: 60%;
+    /*background-color: rgb(105, 97, 97);*/
+    margin-left: 20px;
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    align-items: center;
+}
+.hijosFooter2{
+    width: 20%;
+    height: 60%;
+    /*background-color: rgb(105, 97, 97);*/
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    align-items: center;
+}
+.hijosFooter3{
+    width: 20%;
+    height: 60%;
+    /*background-color: rgb(105, 97, 97);*/
+    margin-right: 20px;
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    align-items: center;
+}
+.letras{
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0px;
+    
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+P{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.p1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 30px;
+    margin-left: 40px;
+}
+
+
+
+
+        /*    BOTÓN DEL CARRITO FLOTANTE    */
+        #botonCarrito {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 18px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: "New Rocker", system-ui;
+            z-index: 9000;
+            box-shadow: 0 0 15px rgba(255,255,255,0.3);
+            transition: transform 0.2s;
+        }
+        #botonCarrito:hover {
+             transform: scale(1.1);
+             background: red; 
+        }
+        #contadorCarrito {
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 7px;
+            font-size: 13px;
+            margin-left: 5px;
+        }
+        
+
+        /*     PANEL LATERAL DEL CARRITO      */
+        #panelCarrito {
+            position: fixed;
+            top: 0;
+            right: -400px; /* empieza oculto */
+            width: 360px;
+            height: 100%;
+            background: #111;
+            border-left: 2px solid white;
+            z-index: 9500;
+            transition: right 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-family: "New Rocker", system-ui;
+            color: white;
+        }
+        #panelCarrito.abierto { 
+            right: 0; 
+        }
+
+        #panelCarrito h2 {
+            text-align: center;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        #listaCarrito {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .itemCarrito {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #333;
+            padding: 10px 0;
+        }
+        .itemCarrito img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .itemCarrito .info { 
+            flex: 1; 
+            font-size: 14px; 
+        }
+
+        .itemCarrito .info span { 
+            display: block; 
+            color: #aaa; 
+        }
+
+        
+        .btnEliminar {
+            background: red;
+            color: white;
+            border: none;
+            padding: 4px 9px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #totalCarrito {
+            font-size: 20px;
+            text-align: right;
+            padding: 10px 0;
+            border-top: 1px solid white;
+            margin-top: 10px;
+        }
+
+        #btnConfirmarEncargo {
+            background: white;
+            color: black;
+            border: none;
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-family: "New Rocker", system-ui;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        #btnConfirmarEncargo:hover { 
+            background: red; 
+        }
+
+        #btnCerrarCarrito {
+            background: none;
+            color: white;
+            border: 1px solid white;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: "New Rocker", system-ui;
+            margin-bottom: 10px;
+        }
+
+
+
+        /*      MODAL DE REGISTRO DEL CLIENTE      */
+        #fondoModal {
+            display: none;
+            position: fixed;
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+        #fondoModal.activo { 
+            display: flex; 
+        }
+
+        #cajModal {
+            background: #111;
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 35px;
+            width: 420px;
+            max-width: 95vw;
+            color: white;
+            font-family: "New Rocker", system-ui;
+        }
+        #cajModal h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+        .grupoModal {
+            margin-bottom: 15px;
+        }
+        .grupoModal label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #bbb;
+        }
+        .grupoModal input {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .grupoModal input:focus {
+            outline: none;
+            border-color: white;
+        }
+        .errorModal {
+            color: red;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        #btnEnviarEncargo {
+            width: 100%;
+            padding: 14px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: "New Rocker", system-ui;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #btnEnviarEncargo:hover { 
+            background: #ccc; 
+        }
+        #btnCancelarModal {
+            width: 100%;
+            padding: 10px;
+            background: none;
+            color: #aaa;
+            border: 1px solid #444;
+            border-radius: 8px;
+            font-family: "New Rocker", system-ui;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        #mensajeExito {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        #mensajeExito h3 { 
+            font-size: 24px; 
+            margin-bottom: 10px; 
+        }
+        #mensajeExito p { 
+            color: #aaa; 
+            margin-bottom: 20px; 
+        }
+
+
+
+        /* ---- SECCIÓN DE PRODUCTOS ---- */
+        /* Los productos los generamos con JS, respetando tu estructura */
+        .cajaRopaImg {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .nombreProducto {
+            color: white;
+            font-family: "New Rocker", system-ui;
+            font-size: 17px;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .precioProducto {
+            color: #aaa;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: normal;
+        }
+
+
+        /* Mensaje cuando carrito está vacío */
+        #carritoVacio {
+            text-align: center;
+            color: #555;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+
+
+        /* Notificación al agregar producto */
+        #notificacion {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-family: "New Rocker", system-ui;
+            font-size: 14px;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        #notificacion.visible { 
+            opacity: 1; 
+        }
+
+
+
+
+
+
+

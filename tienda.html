@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONDO-AUFIT | Tienda</title>
+    <link rel="stylesheet" href="mufasa.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=New+Rocker&display=swap');
+
+    </style>
+</head>
+<body>
+
+    <!--      HEADER            -->
+    <header>
+        <div class="headerPadre1">
+            <div class="headerPadre2"><a href="#inicio">INICIO</a></div>
+            <div class="headerPadre3">
+                <div class="headerHijos"><p>MUFASA</p></div>
+            </div>
+            <div class="headerPadre4">
+                <div class="headerHijos"><a href="#sobre-nosotros">SOBRE NOSOTROS</a></div>
+                <div class="headerHijos"><a href="#prendas">PRENDAS</a></div>
+                
+            </div>
+        </div>
+    </header>
+
+    
+    <!--       MAIN      -->
+    <main>
+        
+        <div class="mainPadre1" id="#inicio">
+            <div class="mainPadre1-1">
+                <div class="hijosmainPadre1-1-1"></div>
+                <div class="hijosmainPadre1-1-2"><p class="p1">MUFASA</p></div>
+                <div class="hijosmainPadre1-1-3"></div>
+                <div class="hijosmainPadre1-1-4"></div>
+            </div>
+            <div class="mainPadre1-2"></div>
+        </div>
+
+        <!--       SECCIÓN DE PRODUCTOS      -->
+        <div class="mainPadre2" id="prendas">
+            <!-- Los productos se insertan aquí automáticamente -->
+        </div>
+
+        
+        <div class="mainPadre3">
+            <div class="grupo"></div>
+            <div class="grupo"></div>
+        </div>
+        <div class="mainPadre4">
+            <div class="hijosPadre4-1"></div>
+            <div class="hijosPadre4-2">
+                <h5>DESLUMBRATE CON NUESTRAS PRENDAS</h5>
+                <br><br><br><br><br><br><br>
+                <h3>▲vuestras sonrisas son nuestra prioridad▲</h3>
+                <br><br><br><br><br><br><br><br><br>
+                <h4>somos la calidad!!</h4>
+            </div>
+        </div>
+        <div class="mainPadre6">
+            <div class="hijosPadre6-1"></div>
+            <div class="hijosPadre6-2"></div>
+            <div class="hijosPadre6-3"></div>
+        </div>
+        <div class="mainPadre7">
+            <div class="hijosPadre7-1" >
+                <h1>CUENTE CON NOSOTROS <br><h3>para todo lo que se le ofrezca</h3></h1>
+            </div>
+            <div class="hijosPadre7-2" id="sobre-nosotros"></div>
+        </div>
+
+
+        <!--      BOTÓN FLOTANTE DEL CARRITO      -->
+    <button id="botonCarrito" onclick="abrirCarrito()">
+        🛒 CARRITO <span id="contadorCarrito">0</span>
+    </button>
+
+    <!--       PANEL LATERAL DEL CARRITO       -->
+    <div id="panelCarrito">
+        <button id="btnCerrarCarrito" onclick="cerrarCarrito()">✕ CERRAR</button>
+        <h2>🛒 MI CARRITO</h2>
+        <div id="listaCarrito">
+            <div id="carritoVacio">Tu carrito está vacío</div>
+        </div>
+        <div id="totalCarrito">Total: 0.000 FCFA</div>
+        <button id="btnConfirmarEncargo" onclick="abrirModal()">CONFIRMAR ENCARGO</button>
+    </div>
+
+    <!--      MODAL DE REGISTRO DEL CLIENTE     -->
+    <div id="fondoModal">
+        <div id="cajModal">
+
+            <!-- Formulario de registro -->
+            <div id="formularioModal">
+                <h2> TUS DATOS DE ENTREGA</h2>
+
+                <div class="grupoModal">
+                    <label>Nombre Completo</label>
+                    <input type="text" id="modalNombre" placeholder="Ej: Cristian Duban">
+                    <div class="errorModal" id="errNombre"></div>
+                </div>
+
+                <div class="grupoModal">
+                    <label>Domicilio (dirección)</label>
+                    <input type="text" id="modalDomicilio" placeholder="Ej: Bomudi , Bata">
+                    <div class="errorModal" id="errDomicilio"></div>
+                </div>
+
+                <div class="grupoModal">
+                    <label>Número de Teléfono</label>
+                    <input type="text" id="modalTelefono" placeholder="Ej: 222123456">
+                    <div class="errorModal" id="errTelefono"></div>
+                </div>
+
+                <div class="grupoModal">
+                    <label>Email</label>
+                    <input type="email" id="modalEmail" placeholder="Ej: cristianduban@gmail.com">
+                    <div class="errorModal" id="errEmail"></div>
+                </div>
+
+                <button id="btnEnviarEncargo" onclick="enviarEncargo()">ENVIAR ENCARGO</button>
+                <button id="btnCancelarModal" onclick="cerrarModal()">Cancelar</button>
+            </div>
+
+            <!-- Mensaje de éxito -->
+            <div id="mensajeExito">
+                <h3>¡Encargo Enviado!</h3>
+                <p>Tu encargo ha sido recibido. El personal de RONDO-AUFIT lo revisará y te contactará pronto.</p>
+                <button id="btnEnviarEncargo" onclick="cerrarTodo()">VOLVER A LA TIENDA</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--      NOTIFICACIÓN RÁPIDA       -->
+    <div id="notificacion">✓ Producto añadido al carrito</div>
+
+    </main>
+
+    <footer>
+        <div class="hijosFooter1"><p class="letras">2026 RONDO-AUFIT</p></div>
+        <div class="hijosFooter2"><p class="letras">CREADO POR CRISTIAN DUBAN</p></div>
+        <div class="hijosFooter3"><p class="letras">2026 RONDO-AUFIT</p></div>
+    </footer>
+
+    <!-- Cargamos primero datos.js y luego la lógica de la tienda -->
+    <script src="datos.js"></script>
+    <script src="tienda.js"></script>
+
+</body>
+</html>
